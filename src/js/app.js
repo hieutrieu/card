@@ -369,7 +369,7 @@ var FlowerColorTest = (function () {
             DOMResult.find('.__result-title').html(index + '. ' + resultCard.title);
             DOMResult.find('.__result-name').html(resultCard.name);
             DOMResult.find('.__result-desc').html(resultCard.desc);
-            DOMResult.find('.__result-content').html('<div class="unlike-content"><p>続きを見るには</p><div class="fb-like" data-href="https://www.facebook.com/MegumiHarunaJewelry" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div><p>を押してください</p></div><div class="like-content" style="display: none;">'+ resultCard.content +'</div>');
+            DOMResult.find('.__result-content').html('<div class="unlike-content"><p>続きを見るには</p><div class="fb-like" data-href="https://www.facebook.com/MegumiHarunaJewelry" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div><p>を押してください</p></div><div class="like-content" style="display: none;">'+ resultCard.content[index] +'</div>');
             DOMResult.find('.__result-image').html('<img src="src/images/planet/'+ cardId +'.png" />');
 
             var DOMJewerly = DOMResult.find('.jewelry');
