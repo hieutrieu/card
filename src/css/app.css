@@ -214,7 +214,19 @@ div#result-page .result-box .result-section .desc-content h1 {
 }
 
 div#result-page .result-box .result-section .desc-content .column-right {
+    margin-top: 10px;
+}
 
+div#result-page .result-box .result-section .desc-content .column-right .__result-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1200px) {
+    div#result-page .result-box .result-section .desc-content .column-right .__result-name,
+    div.text-center-md {
+        text-align: center;
+    }
 }
 
 div#result-page .result-box .result-section .desc-content .text-content p{
