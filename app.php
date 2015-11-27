@@ -52,6 +52,8 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
 
+        <div class="background-center visible-xs-block"></div>
+
         <div class="container">
             <div id="app-content">
                 <div class="ajax-loading"></div>

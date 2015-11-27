@@ -262,6 +262,7 @@ var FlowerColorTest = (function () {
     App.ResultPage.showContentCard = function () {
         $(".unlike-content").fadeOut();
         $(".like-content").fadeIn();
+        $(".require-like").fadeIn();
     };
 
     App.ResultPage.shareYourResult = function () {
@@ -375,13 +376,13 @@ var FlowerColorTest = (function () {
             DOMResult.find('.__result-image').html('<img src="src/images/planet/'+ cardId +'.png" />');
 
             var DOMJewerly = DOMResult.find('.jewelry');
-            var jewerlyData = App.result.jewelry[index - 1];
+            var jewerlyData = resultCard.jewelry;
 
-            DOMJewerly.find('.__result-jewelry-name').html(jewerlyData.name);
             DOMJewerly.find('.__result-jewelry-desc').html(jewerlyData.desc);
+            DOMJewerly.find('.__result-jewelry-img').html('<img src="src/images/jewelry/'+ cardId +'.jpg" />');
 
             index ++;
-        };
+        }
 
         FB.XFBML.parse(document.body, function () {
             $("#facebook-box .ajax-loading").css('display', 'none');
