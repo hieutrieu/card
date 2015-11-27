@@ -128,6 +128,8 @@ var FlowerColorTest = (function () {
 
                     $("#confirm-buttons").css('display', 'none');
                     $("#goToResultButton").css('display', 'block');
+                    $(".confirm-text-1").css('display', 'none');
+                    $(".confirm-text-2").css('display', 'block');
                 });
 
                 $("#goToResultButton button").on('click', function () {

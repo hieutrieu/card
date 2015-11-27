@@ -51,7 +51,7 @@ div.ajax-loading {
 }
 
 div#choose-page .choose-page-title {
-    margin: 200px 0 30px 0;
+    margin: 40px 0 30px 0;
     position: relative;
     text-align: center;
 }
@@ -132,10 +132,16 @@ div#result-page {
     margin-bottom: 50px;
 }
 
+div#result-page .result-page-title img, div#result-page .result-page-text-1 img {
+    width: 100%;
+    height: 100%;
+}
+
 div#result-page .result-page-title {
-    margin: 200px 0 30px 0;
+    margin: 40px 0 30px 0;
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 div#result-page .share-on-facebook-title {
@@ -151,40 +157,31 @@ div#result-page .result-container {
 }
 
 div#result-page .result-container .card  img {
-    width: 215px;
-    height: 314px;
+    max-width: 215px;
+    max-height: 314px;
+    width: 100%;
+    height: 100%;
 }
 
 div#result-page .result-page-title .title {
     display: block;
-    background: transparent url('../images/f-color-title.jpg') no-repeat;
-    width: 371px;
-    height: 54px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 div#result-page .result-page-title .sub-title {
     display: block;
-    background: transparent url('../images/result-page-sub-title.png') no-repeat;
-    width: 326px;
-    height: 29px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 div#result-page .result-page-title .result-page-adward {
     display: block;
-    background: transparent url('../images/result-page-award.png') no-repeat;
-    width: 275px;
-    height: 77px;
     margin: 10px auto;
 }
 
 div#result-page .result-page-text-1 {
     display: block;
-    background: transparent url('../images/result-page-text-1.png') no-repeat;
-    width: 349px;
-    height: 35px;
-    margin: 30px auto;
+    margin: 20px auto;
+    text-align: center;
 }
 
 div#result-page .result-box .result-section .desc {
@@ -197,6 +194,10 @@ div#result-page .result-box .result-section .desc .border {
     border: 1px solid #CAC191;
     padding: 10px;
     position: relative;
+}
+
+div#result-page .result-box .result-section .desc-content h1 {
+    font-size: 20px;
 }
 
 div#result-page .result-box .result-section .desc-content .text-content p{
